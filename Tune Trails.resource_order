@@ -22,10 +22,12 @@
     {"name":"tools","order":2,"path":"folders/脚本/Game/Utils/tools.yy",},
     {"name":"View","order":5,"path":"folders/脚本/Game/Utils/View.yy",},
     {"name":"路径","order":4,"path":"folders/路径.yy",},
+    {"name":"Music","order":7,"path":"folders/脚本/Game/Utils/Music.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"EditText","order":1,"path":"objects/EditText/EditText.yy",},
     {"name":"ObjectManager","order":4,"path":"scripts/ObjectManager/ObjectManager.yy",},
+    {"name":"BufferUtil","order":8,"path":"scripts/BufferUtil/BufferUtil.yy",},
     {"name":"gameInit","order":2,"path":"scripts/gameInit/gameInit.yy",},
     {"name":"drawing","order":1,"path":"scripts/drawing/drawing.yy",},
     {"name":"Vector","order":6,"path":"scripts/Vector/Vector.yy",},

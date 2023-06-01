@@ -4,7 +4,7 @@ function initFont() {
 	logD("initFont")
     var _fontCache = {};  
 
-    __loadFont = method(
+    var __loadFont = method(
 		{_fontCache: _fontCache},
 		function(name, size, bold = 0, italic = 0) {
 			var cacheKey = string("n{3}s{0}b{1}i{2}", size, bold, italic, name);

@@ -33,9 +33,11 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"tools","folderPath":"folders/脚本/Game/Utils/tools.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"View","folderPath":"folders/脚本/Game/Utils/View.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"路径","folderPath":"folders/路径.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Music","folderPath":"folders/脚本/Game/Utils/Music.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"ark-pixel-12px-monospaced-zh_cn.ttf","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"music.wav","CopyToMask":-1,"filePath":"datafiles",},
   ],
   "isEcma": false,
   "LibraryEmitters": [],
@@ -43,9 +45,11 @@
     "IDEVersion": "2023.4.0.84",
   },
   "resources": [
+    {"id":{"name":"MusicManager","path":"scripts/MusicManager/MusicManager.yy",},},
     {"id":{"name":"EditText","path":"objects/EditText/EditText.yy",},},
     {"id":{"name":"ObjectManager","path":"scripts/ObjectManager/ObjectManager.yy",},},
     {"id":{"name":"forEach","path":"scripts/forEach/forEach.yy",},},
+    {"id":{"name":"BufferUtil","path":"scripts/BufferUtil/BufferUtil.yy",},},
     {"id":{"name":"gameInit","path":"scripts/gameInit/gameInit.yy",},},
     {"id":{"name":"textViewHash","path":"scripts/textViewHash/textViewHash.yy",},},
     {"id":{"name":"Debug","path":"scripts/Debug/Debug.yy",},},
