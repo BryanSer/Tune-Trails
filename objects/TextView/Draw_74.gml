@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 var currentHash = textViewHash(self)
-if(currentHash != lastHash || textSruface == undefined) {
+if((currentHash != lastHash || !surface_exists(textSruface)) || textSruface == undefined) {
 	if(textSruface != undefined && surface_exists(textSruface)){
 		surface_free(textSruface)
 	}

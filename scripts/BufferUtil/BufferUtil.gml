@@ -44,6 +44,7 @@ function BufferUtil(){
 			var size = buffer_get_size(buffer_file);
 			var buffer = buffer_create(size, buffer_fixed, 1);
 			buffer_copy(buffer_file, 0, size, buffer, 0);
+			buffer_delete(buffer_file)
 			return buffer
 		}
 		
