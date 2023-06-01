@@ -13,15 +13,24 @@ function BufferUtil(){
 			return str
 		},
 		peekInt: function(buffer, offset) {
+			return buffer_peek(buffer, offset, buffer_s32)
+		},
+		peekUInt:  function(buffer, offset) {
 			return buffer_peek(buffer, offset, buffer_u32)
 		},
 		peekLong: function(buffer, offset) {
 			return buffer_peek(buffer, offset, buffer_u64)
 		},
 		peekShort: function(buffer, offset) {
+			return buffer_peek(buffer, offset, buffer_s16)
+		},
+		peekUShort: function(buffer, offset) {
 			return buffer_peek(buffer, offset, buffer_u16)
 		},
 		peekByte: function(buffer, offset) {
+			return buffer_peek(buffer, offset, buffer_s8)
+		},
+		peekUByte: function(buffer, offset) {
 			return buffer_peek(buffer, offset, buffer_u8)
 		},
 		peekFloat: function(buffer, offset) {
