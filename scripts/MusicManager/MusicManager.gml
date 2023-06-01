@@ -10,7 +10,7 @@ function initMusicManager() {
 		while(true){
 			var name = string_upper(global.bufferUtil.peekString(buffer, chunkNameIndex, 4))
 			if(name == "DATA"){
-				return chunkNameIndex + 8
+				return chunkNameIndex
 			}
 			var size = global.bufferUtil.peekInt(buffer, chunkNameIndex + 4) 
 			chunkNameIndex += size 
@@ -80,15 +80,14 @@ function initMusicManager() {
 		} else {
 			logE("不支持的bit数")
 		}
-		var frame = (soundInfo.bit / 8) * soundInfo.channelLength
-		soundInfo.length = length / frame
+		soundInfo.length = length
 		soundInfo.offset = dataIndex + 8
 		soundInfo.audioId = audio_create_buffer_sound(
 			buffer, 
 			soundInfo.bitBufferType,
 			soundInfo.rate,
 			soundInfo.offset,
-			soundInfo.length,
+			length,
 			soundInfo.channel
 		)
 		return soundInfo
