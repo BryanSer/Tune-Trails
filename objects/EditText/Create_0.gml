@@ -22,3 +22,8 @@ isPointInRotatedRectangle = function(vec1, length, width, rot, point, sx, sy) {
 
     return false;
 }
+
+music = new Music()
+music.loadFile("music.wav")
+music.play(30.0)
+logD("length: {0}", music.getTimeLength())

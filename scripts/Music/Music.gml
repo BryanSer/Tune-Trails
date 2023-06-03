@@ -26,8 +26,15 @@ function Music() constructor{
 	}
 	
 	static isDestroyed = function() {
-		return audioData.audioId < 0
+		return audioData == pointer_null || audioData.audioId < 0
 	}
+	
+	static destroy = function() {
+		global.audioManager.releaseAudio(audioData)
+		soundInstanceId = -1
+		audioData = pointer_null
+	}
+	
 	static getPlayStatus = function() {
 		if (isDestroyed()) {
 			return PlayStatus.DESTROYED
@@ -45,6 +52,9 @@ function Music() constructor{
 	}
 	
 	static play = function(at = 0) {
+		if (isDestroyed()) {
+			logE("该音频已经被释放")
+		}
 		if (soundInstanceId != -1 && audio_is_playing(soundInstanceId)) {
 			logE("已经在播放中了")
 		}
@@ -57,6 +67,9 @@ function Music() constructor{
 	}
 	
 	static pause = function() {
+		if (isDestroyed()) {
+			logE("该音频已经被释放")
+		}
 		if (soundInstanceId == -1 || !audio_is_playing(soundInstanceId)) {
 			logE("该音频还没有在播放")
 		}
@@ -64,6 +77,9 @@ function Music() constructor{
 	}
 	
 	static resume = function() {
+		if (isDestroyed()) {
+			logE("该音频已经被释放")
+		}
 		if (soundInstanceId == -1) {
 			logE("该音频还没有在播放")
 		}
@@ -74,6 +90,9 @@ function Music() constructor{
 	}
 	
 	static stop = function() {
+		if (isDestroyed()) {
+			logE("该音频已经被释放")
+		}
 		if (soundInstanceId == -1 || !audio_is_playing(soundInstanceId)) {
 			logE("该音频还没有在播放")
 		}
@@ -81,6 +100,9 @@ function Music() constructor{
 	}
 	
 	static seek = function(to, isOffset = false) {
+		if (isDestroyed()) {
+			logE("该音频已经被释放")
+		}
 		if (soundInstanceId == -1) {
 			logE("该音频还没有在播放")
 		}
@@ -94,6 +116,9 @@ function Music() constructor{
 	}
 	
 	static getCurrentTime = function() {
+		if (isDestroyed()) {
+			logE("该音频已经被释放")
+		}
 		return audio_sound_get_track_position(soundInstanceId) / audioData.pitch
 	}
 

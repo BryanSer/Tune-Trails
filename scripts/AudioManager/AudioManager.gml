@@ -101,15 +101,8 @@ function initAudioManager() {
 			audio_stop_sound(audio.audioId)
 			audio_destroy_stream(audioData.audioId)
 			audioData.audioId = -1
-		},
-		playAudio: method({ loadFile: loadFile }, function (fileName) {
-			var audio = loadFile(fileName)
-
-			audio_play_sound_ext({
-				sound: audio.audioId,
-				pitch: audio.pitch
-			})
-		})
+			buffer_delete(audioData.buffer)
+		}
 	}
 
 }
