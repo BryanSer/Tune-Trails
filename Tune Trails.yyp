@@ -30,10 +30,10 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Game","folderPath":"folders/脚本/Game.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Utils","folderPath":"folders/脚本/Game/Utils.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Font","folderPath":"folders/脚本/Game/Utils/Font.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Music","folderPath":"folders/脚本/Game/Utils/Music.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"tools","folderPath":"folders/脚本/Game/Utils/tools.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"View","folderPath":"folders/脚本/Game/Utils/View.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"路径","folderPath":"folders/路径.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Music","folderPath":"folders/脚本/Game/Utils/Music.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"ark-pixel-12px-monospaced-zh_cn.ttf","CopyToMask":-1,"filePath":"datafiles",},
@@ -45,7 +45,7 @@
     "IDEVersion": "2023.4.0.84",
   },
   "resources": [
-    {"id":{"name":"MusicManager","path":"scripts/MusicManager/MusicManager.yy",},},
+    {"id":{"name":"AudioManager","path":"scripts/AudioManager/AudioManager.yy",},},
     {"id":{"name":"EditText","path":"objects/EditText/EditText.yy",},},
     {"id":{"name":"ObjectManager","path":"scripts/ObjectManager/ObjectManager.yy",},},
     {"id":{"name":"forEach","path":"scripts/forEach/forEach.yy",},},
@@ -55,6 +55,7 @@
     {"id":{"name":"Debug","path":"scripts/Debug/Debug.yy",},},
     {"id":{"name":"drawing","path":"scripts/drawing/drawing.yy",},},
     {"id":{"name":"Vector","path":"scripts/Vector/Vector.yy",},},
+    {"id":{"name":"Music","path":"scripts/Music/Music.yy",},},
     {"id":{"name":"TextView","path":"objects/TextView/TextView.yy",},},
     {"id":{"name":"initFont","path":"scripts/initFont/initFont.yy",},},
     {"id":{"name":"hash","path":"scripts/hash/hash.yy",},},

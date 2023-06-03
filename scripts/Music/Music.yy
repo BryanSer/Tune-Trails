@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "MusicManager",
+  "name": "Music",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

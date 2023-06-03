@@ -17,7 +17,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"TextView","path":"objects/TextView/TextView.yy",},"propertyId":{"name":"height","path":"objects/TextView/TextView.yy",},"value":"30",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"EditText","path":"objects/EditText/EditText.yy",},"propertyId":{"name":"hint","path":"objects/EditText/EditText.yy",},"value":"输入:",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"TextView","path":"objects/TextView/TextView.yy",},"propertyId":{"name":"margin","path":"objects/TextView/TextView.yy",},"value":"[5,2,5,2]",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":224.0,},
+          ],"rotation":90.0,"scaleX":1.5,"scaleY":2.0,"x":384.0,"y":224.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

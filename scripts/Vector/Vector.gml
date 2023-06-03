@@ -10,6 +10,16 @@ function Vector(_x = 0, _y = 0) constructor {
 		return self
 	}
 	
+	static subtract = function(vec) {
+		x -= vec.x
+		y -= vec.y
+		return self
+	}
+	
+	static clone = function() {
+		return new Vector(x, y)
+	}
+	
 	static sqrLength = function() {
 		return sqr(x) + sqr(y)
 	}
